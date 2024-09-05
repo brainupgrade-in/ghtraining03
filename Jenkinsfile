@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build Docker Image') {
             steps {
-                echo 'Building Docker Image using webhook - 04'
+                echo 'Building Docker Image using webhook - 11'
                 script {
                     def image = docker.build("brainupgrade/ghtraining03:${env.BUILD_ID}")
                 }
